@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: #161616;
+        --foreground: #ffffff;
+        --card: hsl(223 0% 6%);
+        --card-foreground: hsl(210 40% 98%);
+        --popover: hsl(223 0% 6%);
+        --popover-foreground: hsl(210 40% 98%);
+        --primary: hsl(210 40% 98%);
+        --primary-foreground: hsl(222.2 47.4% 11.2%);
+        --secondary: #888888;
+        --secondary-foreground: hsl(210 40% 98%);
+        --muted: hsl(217.2 32.6% 17.5%);
+        --muted-foreground: hsl(215 20.2% 65.1%);
+        --accent: hsl(0 0% 10%);
+        --accent-foreground: hsl(210 40% 98%);
+        --destructive: #fb132b;
+        --destructive-foreground: hsl(210 40% 98%);
+        --border: #313131;
+        --input: hsl(240 3.7% 15.9%);
+        --ring: hsl(212.7 26.8% 83.9%);
+
+        /* https://easings.net/en#easeOutBack */
+        --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+        --container-max-width: 840px;
+        --container-border-width: 2px;
+        --content-max-width: calc(
+            var(--container-max-width) - var(--container-border-width) -
+                var(--container-border-width)
+        );
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    ::-moz-selection {
+        /* Code for Firefox */
+        color: #404040;
+        background: #ffcd37d0;
+    }
+
+    ::selection {
+        color: #404040;
+        background: #ffcd37d0;
+    }
+}
+
+@layer components {
+    body {
+        @apply bg-[#161616] text-foreground w-[100dvw] min-h-[100dvh] flex justify-center font-poppins overflow-x-hidden;
+    }
+
+    #root {
+        @apply w-full h-full flex min-h-[100dvh] overflow-hidden border-l border-r;
+        border-left-width: var(--container-border-width);
+        border-right-width: var(--container-border-width);
+        max-width: min(var(--content-max-width), 100%);
+    }
+}
+
+@layer utilities {
+}

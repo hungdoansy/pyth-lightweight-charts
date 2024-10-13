@@ -1,0 +1,14 @@
+/node_modules
+
+# next.js
+/out
+
+# production
+/build
+/dist
+
+# pnpm
+pnpm-lock.yaml
+
+# npm
+package-lock.json

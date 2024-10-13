@@ -1,0 +1,58 @@
+{
+    "name": "pyth-lightweight-charts",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "preview": "vite preview",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "prettify": "prettier './**/*.{js,jsx,mjs,cjs,ts,tsx,css,md,json,yml,yaml,html}' --config ./.prettierrc.cjs",
+        "format": "pnpm run prettify --check",
+        "format:fix": "pnpm run prettify --write"
+    },
+    "engines": {
+        "pnpm": "^9.1.1",
+        "node": "^18.20.3"
+    },
+    "dependencies": {
+        "@radix-ui/react-slot": "^1.1.0",
+        "axios": "1.7.2",
+        "class-variance-authority": "0.7.0",
+        "clsx": "2.1.1",
+        "dayjs": "1.11.11",
+        "immer": "10.0.3",
+        "lightweight-charts": "4.2.0",
+        "lodash": "4.17.21",
+        "react": "18.3.1",
+        "react-dom": "18.3.1",
+        "tailwind-merge": "2.5.2",
+        "zustand": "4.5.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "9.8.0",
+        "@trivago/prettier-plugin-sort-imports": "4.3.0",
+        "@types/lodash": "4.17.7",
+        "@types/node": "18.11.9",
+        "@types/react": "18.3.3",
+        "@types/react-dom": "18.3.0",
+        "@typescript-eslint/eslint-plugin": "7.0.2",
+        "@typescript-eslint/parser": "7.0.2",
+        "@vitejs/plugin-react": "4.3.1",
+        "autoprefixer": "10.4.20",
+        "eslint": "8.56.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-prettier": "4.2.1",
+        "eslint-plugin-react": "7.32.2",
+        "eslint-plugin-react-hooks": "4.6.0",
+        "eslint-plugin-unused-imports": "3.1.0",
+        "globals": "15.9.0",
+        "postcss": "8.4.41",
+        "prettier": "2.8.1",
+        "tailwindcss": "3.4.10",
+        "typescript": "5.3.3",
+        "vite": "5.4.0"
+    }
+}
